@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+
+<p id="demo"></p>
+
+<script>
+	var game = true;
+
+	document.getElementById("demo").innerHTML = "To end the game type 'end game'";
+	while (game == true) {
+		input = prompt("what do you want to do?");
+		if (input == "end game") {
+			game = false;
+		} 
+		console.log("your move was " + input);
+	}
+	prompt("thanks for playing!");
+
+</script>
+
+</body>
+</html>
